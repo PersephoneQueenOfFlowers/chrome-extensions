@@ -1,0 +1,26 @@
+{
+    "name": "BookNoFace",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/BookNoFace.png",
+        "32": "images/BookNoFace.png",
+        "48": "images/BookNoFace.png",
+        "128": "images/BookNoFace.png"
+      }
+    },
+    "icons": {
+      "16": "images/BookNoFace.png",
+      "32": "images/BookNoFace.png",
+      "48": "images/BookNoFace.png",
+      "128": "images/BookNoFace.png"
+    },
+    "manifest_version": 2
+  }
