@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Sortsit",
+  "version": "0.6",
+  "description":"Organizes Litmus Builder Projects in the builder page.",
+  "browser_action": {
+  "default_icon": "sloth48.png",
+  "default_popup": "options.html"
+  },
+  "permissions": [
+        "activeTab",
+        "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://litmus.com/builder/projects",
+        "https://litmus.com/builder/projects*"
+      ],
+      "js": ["jquery-3.4.1.min.js","content.js","options.js"
+      ],
+      "icons": { "16": "sloth16.png",
+             "48": "sloth48.png",
+            "128": "sloth128.png" }
+    }
+  ]
+}
